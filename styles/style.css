@@ -11,8 +11,9 @@
 }
 
 @font-face {
-    font-family: "Roboto-Italic";
+    font-family: "Roboto-Light-Italic";
     src: url(../fonts/Roboto-Italic.ttf) format('truetype');
+    font-weight: 300;
 }
 
 * {
@@ -22,10 +23,14 @@
     box-sizing: border-box;
 }
 
-header a {
-    color: #F9FAF8;
+html {
+    font-size: 62.5%;
 }
 
+a {
+    text-decoration-line: none;
+    color: #E5E7EB;
+}
 
 body {
     height: 100vh;
@@ -78,16 +83,16 @@ main {
     max-width: 75%;
 }
 
-.section_one img{
+.section_one img {
     max-width: 445px;
 }
 
 .section_two {
     flex-grow: 1.1;
-    
+
 }
 
-.section_two menu{
+.section_two menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -95,46 +100,46 @@ main {
     gap: 20px;
 }
 
-.section_two h2{
+.section_two h2 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-menu img, figcaption{
+menu img,
+figcaption {
     max-width: 150px;
     border-radius: 10%;
     text-align: center;
-}
-
-menu a{
-    text-decoration: none;
 }
 
 .section_three {
     flex-grow: 0.9;
 }
 
-.section_three article{
+.section_three article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
 
-.quote{
-    font-family: "Roboto-Italic", sans-serif;
+.quote {
+    font-family: "Roboto-Light-Italic", sans-serif;
+    font-size: 3.6rem;
+    color: #1F2937;
 }
 
-.author{
+.author {
     text-align: right;
+    font-size: 1.6rem;
 }
 
 .section_four {
     flex-grow: 0.8;
 }
 
-.section_four div{
+.section_four div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -144,7 +149,7 @@ menu a{
     border-radius: 1%;
 }
 
-.section_four button{
+.section_four button {
     border: 2px solid white;
 }
 
@@ -173,25 +178,30 @@ div {
     gap: 10px;
 }
 
-.information_header_text {}
+.information_header_text {
+    font-size: 3.6rem;
+    color: #1F2937;
+    font-family: "Roboto-Extra-Bold";
+}
 
-.header_logo {}
+.header_logo {
+    font-size: 2.4rem;
+    color: #F9FAF8;
+}
 
 .small_text {
+    font-size: 1rem;
     color: #F9FAF8;
-    text-overflow: clip;
 }
 
 .hero_secondary_text {
-    font-size: 18px;
-    color: #F9FAF8;
-    text-overflow: clip;
+    font-size: 1.8rem;
+    color: #E5E7EB;
 }
 
 .hero_main_text {
-    font-size: 18px;
+    font-size: 4.8rem;
     color: #F9FAF8;
-    text-overflow: clip;
 }
 
 .dark_background_color {
