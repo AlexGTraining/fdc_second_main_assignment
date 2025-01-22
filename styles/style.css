@@ -27,40 +27,40 @@
 }
 
 a {
-    color: inherit;
     text-decoration-line: none;
 }
 
-body {
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.left_margin_wide {
-    margin-left: 20vw;
-}
-
-.right_margin_wide {
-    margin-right: 20vw;
-}
-
-.left_margin_narrow {
-    margin-left: 10vw;
-}
-
-.right_margin_narrow {
-    margin-right: 10vw;
-}
-
 header {
-    height: 5vh;
+    padding: 2rem 0;
+}
+
+header>div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #1F2937;
+}
+
+.top_nav_list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+header a, footer a{
+    color:inherit;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.secondary-content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 main {
@@ -74,17 +74,11 @@ ol {
     list-style: none;
 }
 
-.section_one {
-    min-height: 25%;
+.section_one>div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.section_one div {
-    flex: 1 1 0px;
-    height: 75%;
 }
 
 .section_one img {
@@ -92,9 +86,7 @@ ol {
     max-width: 500px;
 }
 
-.section_two {
-    min-height: 30%;
-}
+.section_two {}
 
 .section_two article {
     max-height: 75%;
@@ -105,7 +97,7 @@ ol {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px 10px;
 }
 
 .section_two h2 {
@@ -116,15 +108,22 @@ ol {
 
 menu img,
 figcaption {
-    max-width: 110px;
-    border-radius: 10%;
+    max-width: 170px;
     text-align: center;
-    color: #1F2937
+    color:inherit;
 }
 
-.section_three {
-    min-height: 25%;
+menu img {
+    border: 5px solid;
+    border-radius: 10%;
+    
 }
+
+menu *{
+    border-color: inherit;
+}
+
+.section_three {}
 
 .section_three article {
     display: flex;
@@ -138,7 +137,6 @@ figcaption {
 }
 
 .section_four {
-    min-height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -153,15 +151,11 @@ footer {
     align-items: center;
 }
 
-.top_nav_list {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
 .cta-container {
     flex: 1 1 0px;
     border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .cta {
@@ -184,6 +178,7 @@ footer {
 /*Text*/
 .main_txt {
     font-size: 3rem;
+    font-family: "Roboto-Extra-Bold", sans-serif;
 }
 
 .secondary_txt {
@@ -192,6 +187,7 @@ footer {
 
 .info_txt {
     font-size: 2.25rem;
+    font-family: "Roboto-Extra-Bold", sans-serif;
 }
 
 .quote_txt {
