@@ -140,10 +140,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .testimonials-grid {
-        grid-template-columns: 1fr;
+    .testimonial-card {
+        flex: 1 1 100%;
     }
-    
+
     .cta-container {
         flex-direction: column;
         text-align: center;
