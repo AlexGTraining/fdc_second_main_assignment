@@ -1,0 +1,31 @@
+.main-bg-color {
+    background-color: #1F2937;
+}
+
+.main-txt-color {
+    color: #F9FAF8;
+}
+
+.secondary-txt-color {
+    color: #E5E7EB;
+}
+
+.quote-bg {
+    background-color: #E5E7EB;
+}
+
+.quote-txt-color {
+    color: #1F2937;
+}
+
+.cta-bg-color {
+    background-color: #3882F6;
+}
+
+.cta-btn-border-color {
+    border-color: #F9FAF8;
+}
+
+.cta-btn-no-border-color {
+    border-color: #3882F6;
+}

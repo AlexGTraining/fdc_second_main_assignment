@@ -1,26 +1,4 @@
-@font-face {
-    font-family: "Roboto";
-    src: url(../fonts/Roboto.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Roboto-Extra-Bold";
-    src: url(../fonts/Roboto.ttf) format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Roboto-Light-Italic";
-    src: url(../fonts/Roboto-Italic.ttf) format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
 * {
-    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -173,63 +151,6 @@ footer {
     cursor: pointer;
     min-width: 8rem;
     min-height: 2rem;
-}
-
-/*Text*/
-.main_txt {
-    font-size: 3rem;
-    font-family: "Roboto-Extra-Bold", sans-serif;
-}
-
-.secondary_txt {
-    font-size: 1.125rem;
-}
-
-.info_txt {
-    font-size: 2.25rem;
-    font-family: "Roboto-Extra-Bold", sans-serif;
-}
-
-.quote_txt {
-    font-family: "Roboto-Light-Italic", sans-serif;
-    font-size: 2.25rem;
-}
-
-.header_logo {
-    font-size: 1.5rem;
-}
-
-/* Colors */
-.main-bg-color {
-    background-color: #1F2937;
-}
-
-.main-txt-color {
-    color: #F9FAF8;
-}
-
-.secondary-txt-color {
-    color: #E5E7EB;
-}
-
-.quote-bg {
-    background-color: #E5E7EB;
-}
-
-.quote-txt-color {
-    color: #1F2937;
-}
-
-.cta-bg-color {
-    background-color: #3882F6;
-}
-
-.cta-btn-border-color {
-    border-color: #F9FAF8;
-}
-
-.cta-btn-no-border-color {
-    border-color: #3882F6;
 }
 
 /* Debug */
