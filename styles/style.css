@@ -30,8 +30,9 @@ header>div {
     gap: 10px;
 }
 
-header a, footer a{
-    color:inherit;
+header a,
+footer a {
+    color: inherit;
 }
 
 .main-content {
@@ -56,19 +57,34 @@ ol {
     list-style: none;
 }
 
+.section_one {
+    padding: 6rem 0px;
+}
+
 .section_one>div {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.section_one img {
-    max-height: 100%;
-    max-width: 500px;
+.section_one>div div {
+    flex: 1 1 0px;
+    overflow: hidden;
+    max-width: 100%;
 }
 
-.section_two {}
+.section_one>div>div>div * {
+    max-width: 450px;
+}
+
+.section_one>div>div>div button {
+    margin-top: 1rem;
+}
+
+.section_two {
+    padding: 3rem 0px;
+    margin-bottom: 2rem;
+}
 
 .section_two article {
     max-height: 75%;
@@ -92,20 +108,17 @@ menu img,
 figcaption {
     max-width: 170px;
     text-align: center;
-    color:inherit;
+    color: inherit;
 }
 
 menu img {
     border: 5px solid;
     border-radius: 10%;
-    
 }
 
-menu *{
-    border-color: inherit;
+.section_three {
+    padding: 8rem 0px;
 }
-
-.section_three {}
 
 .section_three article {
     display: flex;
@@ -116,6 +129,7 @@ menu *{
 
 .author {
     text-align: right;
+    padding-right: 1rem;
 }
 
 .section_four {
@@ -123,6 +137,7 @@ menu *{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 6rem 0px;
 }
 
 footer {
@@ -136,8 +151,8 @@ footer {
 .cta-container {
     flex: 1 1 0px;
     border-radius: 8px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .cta {
@@ -160,7 +175,7 @@ footer {
 /* Debug */
 /*
 section {
-    border: 1px solid black;
+    border: 1px solid orange;
 }
 
 div {
