@@ -27,7 +27,7 @@ header>div {
 .top_nav_list {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 2rem;
 }
 
 header a,
@@ -61,7 +61,7 @@ ol {
     padding: 6rem 0px;
 }
 
-.section_one>div {
+.section_one .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,7 +69,6 @@ ol {
 
 .section_one>div div {
     flex: 1 1 0px;
-    overflow: hidden;
     max-width: 100%;
 }
 
@@ -90,12 +89,12 @@ ol {
     max-height: 75%;
 }
 
-.section_two menu {
+.section_two .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 1rem;
 }
 
 .section_two h2 {
@@ -106,7 +105,7 @@ ol {
 
 menu img,
 figcaption {
-    max-width: 170px;
+    max-width: 11rem;
     text-align: center;
     color: inherit;
 }
@@ -172,13 +171,17 @@ footer {
     min-height: 2rem;
 }
 
-/* Debug */
-/*
-section {
-    border: 1px solid orange;
+@media (max-width: 768px) {
+    .cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
 }
 
-div {
-    border: 1px solid black;
+@media (max-width: 815px) {
+    .section_one .container{
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
-*/
