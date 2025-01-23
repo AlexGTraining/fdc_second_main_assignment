@@ -22,12 +22,14 @@ header>div {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .top_nav_list {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    padding: 0 2rem;
 }
 
 header a,
@@ -59,12 +61,16 @@ ol {
 
 .section_one {
     padding: 6rem 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .section_one .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .section_one>div div {
@@ -179,9 +185,16 @@ footer {
     }
 }
 
-@media (max-width: 815px) {
+@media (max-width: 830px) {
     .section_one .container{
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .section_one .inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
