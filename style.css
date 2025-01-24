@@ -1,33 +1,53 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto.ttf') format('truetype');
-    font-weight: normal;
+    font-family: "Roboto";
+    src: url(../fonts/Roboto.ttf) format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto-Italic';
-    src: url('../fonts/Roboto-Italic.ttf') format('truetype');
-    font-weight: normal;
+    font-family: "Roboto-Extra-Bold";
+    src: url(../fonts/Roboto.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Light-Italic";
+    src: url(../fonts/Roboto-Italic.ttf) format('truetype');
+    font-weight: 300;
     font-style: italic;
 }
 
+:root {
+    --main-bg-color: #1F2937;
+    --main-txt-color: #F9FAF8;
+    --secondary-txt-color: #E5E7EB;
+    --action-bg-color: #3882F6;
+    --value-txt-color: #4B5563;
+    --sign-up-form-bg-color: white;
+    --submit-btn-gb: #2563eb;
+    --main-txt: 3rem;
+    --info-txt: 2.25rem;
+    --header-txt: 1.5rem;
+    --secondary-txt: 1.125rem;
+}
+
 * {
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto';
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #F9FAF8;
 }
 
 header {
-    background-color: #1F2937;
+    background-color: var(--main-bg-color);
     padding: 2rem 0;
 }
 
@@ -41,8 +61,8 @@ header {
 }
 
 .logo {
-    color: #F9FAF8;
-    font-size: 24px;
+    color: var(--main-txt-color);
+    font-size: var(--header-txt);
 }
 
 nav ul {
@@ -52,9 +72,9 @@ nav ul {
 }
 
 nav a {
-    color: #E5E7EB;
+    color: var(--secondary-txt-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: var(--secondary-txt);
 }
 
 main {
@@ -65,20 +85,32 @@ main {
 }
 
 .hero {
-    background-color: #1F2937;
+    background-color: var(--main-bg-color);
     padding: 2rem 2rem;
     text-align: center;
-    color: #F9FAF8;
+    color: var(--main-txt-color);
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: var(--main-txt);
     margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 18px;
-    color: #E5E7EB;
+    font-size: var(--secondary-txt);
+    color: var(--secondary-txt-color);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 2rem;
+}
+
+.secondary-content {
+    max-width: 850px;
+    margin: 0px auto;
+    padding: 0px 2rem;
 }
 
 .content-container {
@@ -93,15 +125,15 @@ main {
 }
 
 .story-text h2, .values h2 {
-    color: #1F2937;
-    font-size: 36px;
+    color: var(--main-bg-color);
+    font-size: var(--info-txt);
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .story-text p {
-    color: #1F2937;
-    font-size: 18px;
+    color: var(--main-bg-color);
+    font-size: var(--secondary-txt);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -118,22 +150,22 @@ main {
     flex: 1;
     min-width: 300px;
     padding: 2rem;
-    background-color: #F9FAF8;
+    background-color: var(--main-txt-color);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .value-item h3 {
-    color: #1F2937;
+    color: var(--main-bg-color);
     margin-bottom: 1rem;
 }
 
 .value-item p {
-    color: #4B5563;
+    color: var(--value-txt-color);
 }
 
 .signUp-container {
-    background-color: white;
+    background-color: var(--sign-up-form-bg-color);
     padding: 3rem;
     border-radius: 8px;
     box-shadow: 0 0 10px;
@@ -153,7 +185,7 @@ main {
 
 label {
     display: block;
-    color: #1F2937;
+    color: var(--main-bg-color);
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
@@ -161,30 +193,29 @@ label {
 input {
     width: 100%;
     padding: 0.8rem;
-    border: 2px solid #E5E7EB;
+    border: 2px solid var(--secondary-txt-color);
     border-radius: 4px;
-    font-size: 16px;
 }
 
 input:focus {
     outline: none;
-    border-color: #3882F6;
+    border-color: var(--action-bg-color);
 }
 
 .submit-btn {
-    background-color: #3882F6;
-    color: #F9FAF8;
+    background-color: var(--action-bg-color);
+    color: var(--main-txt-color);
     border: none;
     padding: 1rem 2rem;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: var(--secondary-txt);
     cursor: pointer;
     width: 100%;
     margin-top: 1rem;
 }
 
 .submit-btn:hover {
-    background-color: #2563eb;
+    background-color: var(--submit-btn-gb);
 }
 
 .testimonials-header {
@@ -193,8 +224,8 @@ input:focus {
 }
 
 .testimonials-header h1 {
-    color: #1F2937;
-    font-size: 36px;
+    color: var(--main-bg-color);
+    font-size: var(--info-txt);
     font-weight: 900;
 }
 
@@ -209,7 +240,7 @@ input:focus {
 }
 
 .testimonial-card {
-    background-color: #E5E7EB;
+    background-color: var(--secondary-txt-color);
     padding: 2rem;
     border-radius: 8px;
     flex: 1;
@@ -218,48 +249,55 @@ input:focus {
 }
 
 .testimonial-card .quote {
-    color: #1F2937;
-    font-size: 36px;
+    color: var(--main-bg-color);
+    font-size: var(--info-txt);
     font-style: italic;
     font-weight: 300;
     margin-bottom: 1rem;
 }
 
 .testimonial-card .author {
-    color: #1F2937;
+    color: var(--main-bg-color);
     font-weight: bold;
     text-align: right;
 }
 
 .cta-section {
-    padding: 5rem 2rem;
+    padding: 6rem 0px;
 }
 
 .cta-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #3882F6;
-    padding: 3rem;
+    flex: 1 1 0px;
     border-radius: 8px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--action-bg-color);
+    color: var(--main-txt-color);
+}
+
+.cta {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: #F9FAF8;
+    gap: 20px;
 }
 
 .sign-up {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border: 2px solid #F9FAF8;
-    padding: 0.5rem 2rem;
-    border-radius: 8px;
-    font-size: 18px;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
     cursor: pointer;
+    min-width: 8rem;
+    min-height: 2rem;
+    background-color: var(--action-bg-color);
+    color: var(--main-txt-color);
+    border-color: var(--main-txt-color);
 }
 
 footer {
-    background-color: #1F2937;
-    color: #F9FAF8;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
     padding: 2rem;
     text-align: center;
 }
