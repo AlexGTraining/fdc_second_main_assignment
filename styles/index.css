@@ -9,12 +9,22 @@ body {
     flex-direction: column;
 }
 
+header {
+    padding-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+
 a {
     text-decoration-line: none;
 }
 
-header {
-    padding: 2rem 0;
+header a
+{
+    color: inherit;
 }
 
 header>div {
@@ -22,7 +32,6 @@ header>div {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .top_nav_list {
@@ -32,21 +41,16 @@ header>div {
     padding-left: 2rem;
 }
 
-header a,
-footer a {
-    color: inherit;
-}
-
 .main-content {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin: 0px auto;
+    padding: 0px 2rem;
 }
 
 .secondary-content {
     max-width: 850px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin: 0px auto;
+    padding: 0px 2rem;
 }
 
 main {
@@ -135,14 +139,6 @@ menu img {
 
 .section_four {
     padding: 6rem 0px;
-}
-
-footer {
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .cta-container {
