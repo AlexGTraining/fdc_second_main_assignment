@@ -170,25 +170,6 @@ main {
     color: var(--value-txt-color);
 }
 
-.signUp-container {
-    background-color: var(--sign-up-form-bg-color);
-    padding: 3rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    align-self: center;
-}
-
-.signUp-container h1 {
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
 label {
     display: block;
     color: var(--main-bg-color);
