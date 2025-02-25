@@ -1,3 +1,7 @@
+main {
+    padding: 3rem;
+}
+
 .signUp-container {
     background-color: var(--sign-up-form-bg-color);
     padding: 3rem;
