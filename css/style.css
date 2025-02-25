@@ -57,16 +57,14 @@ a {
 
 .highlight {
     text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 8px;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.index-header {
-    padding-bottom: 0;
 }
 
 .main-content {
@@ -299,7 +297,7 @@ input:focus {
 }
 
 .section-one {
-    padding: 6rem 0px;
+    padding: 4rem 0px 6rem 0px;
     background-color: var(--main-bg-color);
 }
 
