@@ -55,13 +55,17 @@ a {
     text-decoration: none;
 }
 
+.highlight {
+    text-decoration: underline;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.index-header{
+.index-header {
     padding-bottom: 0;
 }
 
@@ -121,7 +125,7 @@ main {
 
 .story-text {
     text-align: center;
-    margin-top: 3rem ;
+    margin-top: 3rem;
     margin-bottom: 4rem;
 }
 
@@ -326,7 +330,7 @@ input:focus {
     flex: 1;
 }
 
-.section-one .container-child>div *{
+.section-one .container-child>div * {
     max-width: 490px;
 }
 
