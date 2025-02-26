@@ -10,6 +10,7 @@ Technologies allowed:
   - vanilla HTML and CSS
 
 Implementation
+
 Preview: https://alexgtraining.github.io/fdc_second_main_assignment/
 
 Considerations:
