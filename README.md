@@ -11,6 +11,7 @@ Technologies allowed:
 
 Implementation
 Preview: https://alexgtraining.github.io/fdc_second_main_assignment/
+
 Considerations:
   - Accessibility support
     - various image rezolutions and formats to best cater to the users device
