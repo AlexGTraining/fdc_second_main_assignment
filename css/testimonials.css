@@ -38,3 +38,13 @@
     font-weight: bold;
     text-align: right;
 }
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        flex: 1 1 100%;
+    }
+
+    .signUp-container {
+        padding: 2rem;
+    }
+}
